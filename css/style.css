@@ -1,0 +1,88 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+.container {
+	width: 960px;
+	height: 50px;
+	margin: 50px auto;
+	background: #0d1128;
+
+}
+.container ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.container ul.root > li {
+	float: left;
+	height: 50px;
+	position: relative;
+}
+.container ul.root > li > a {
+	float: left;
+	display: block;
+	text-decoration: none;
+	line-height: 50px;
+	color: #fff;
+	padding: 0px 20px 0px 20px
+}
+
+.container ul li > a:hover{
+	background: orange;
+}
+.container ul.root > li:hover > ul.sub{
+	display: block;
+
+}
+
+.container ul.root > li > ul.sub{
+	padding: 0px;
+	margin: 0px;
+	width: 200px;
+	list-style-type: none;
+	background: #2e3f9e;
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	display: none; /*tam thoi*/
+}
+.container ul.root > li ul.sub > li{
+	position: relative;
+}
+.container ul.root > li > ul.sub > li a{
+	display: block;
+	line-height: 40px;
+	text-decoration: none;
+	color: #fff;
+	text-indent: 30px;
+	border-bottom: 1px solid #999;
+}
+.container ul.root > li ul.sub > li a:hover{
+	background: #3c4473;
+}
+.container ul.root > li ul.sub > li ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: absolute;
+	width: 200px;
+	background: #2e3f9e;
+	left: 200px;
+	top: 0px;
+	display: none;
+}
+.container ul.root > li ul.sub > li:hover > ul {
+	display: block;
+}
+
+.A1{
+	display: none;
+}
+
+h1{
+	margin-top: 30px;
+	text-align: center;
+}
